@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display";
+}
+
+main {
+  position: relative;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vertical-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+}
+
+.line-1 .border, .line-2 .border {
+  height: 3rem;
+  width: 1px;
+  border: 1px solid #87879d;
+  opacity: 25%;
+  top: 2rem;
+}
+
+.line-1 .circle-line, .line-2 .circle-line {
+  border-radius: 50%;
+  border: 1px solid #87879d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1px;
+  width: 40px;
+  height: 40px;
+  opacity: 40%;
+}
+
+.banner-left {
+  flex-basis: 33.33%;
+}
+
+.banner-left img,
+.banner-right img {
+  width: 100%;
+}
+
+.banner-center {
+  flex-basis: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 36px;
+  gap: 24px;
+  text-align: center;
+}
+
+.banner-center h1 {
+  font-size: 60px;
+}
+
+.banner-center p {
+  font-size: 20px;
+}
+
+.banner-right {
+  flex-basis: 33.33%;
+}
+
+button {
+  border-radius: 2em;
+  padding: 1em 2em;
+}
+
+.banner-btn .download-btn {
+  background-color: #71c0d4;
+  border: 1px solid #71c0d4;
+  font-weight: 600;
+  color: white;
+  margin: 12px;
+}
+
+.download-btn span {
+  color: #8fe3f9;
+}
+
+.details-btn {
+  background-color: #855fb1;
+  border: 1px solid #855fb1;
+  font-weight: 600;
+  color: white;
+}
+
+.gallery {
+  margin: 10% 10% 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto;
+  gap: 16px;
+}
+
+.gallery-grid img {
+  width: 100%;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 30%;
+}
+
+.features .object-features {
+  color: #4d96a9;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1em;
+  margin: 3em 0 0.5em;
+}
+
+.features .benefit-features {
+  font-size: 2.5em;
+  font-weight: 900;
+  margin: 0 0 0.5em;
+}
+
+.features .description-features {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+footer {
+  background-image: url("assets/desktop/image-footer.jpg"),
+    linear-gradient(#4d96a9, #4d96a9);
+  background-size: cover;
+  background-blend-mode: overlay;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10rem;
+  margin-top: 6em;
+}
+
+footer .footer-feature-1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  flex-basis: 18%;
+  color: white;
+}
+
+footer .footer-feature-2 {
+  text-align: center;
+  font-size: 1.2em;
+  flex-basis: 33.33%;
+  color: white;
+}
+
+footer .download {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+footer .download .download-btn {
+  color: white;
+  background-color: #855fb1;
+  border: 1px solid #855fb1;
+  font-weight: 600;
+}
