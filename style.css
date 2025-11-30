@@ -55,7 +55,7 @@ header {
   height: 40px;
 }
 
-.line-2 .circle-line{
+.line-2 .circle-line {
   background-color: white;
   z-index: 10;
 }
@@ -223,16 +223,6 @@ footer .download .download-btn {
     font-size: 48px;
   }
 
-  
-
-  .gallery {
-    margin-top: 8em;
-  }
-
-  /* .gallery-grid {
-    grid-template-columns: repeat(2, auto) !important;
-  } */
-
   .gallery {
     margin: 15% 5%;
   }
@@ -262,4 +252,35 @@ footer .download .download-btn {
   }
 }
 
+@media (max-width: 576px) {
+  .banner{
+    margin-bottom: 1em;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(2, auto) !important;
+  }
 
+  .banner-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery {
+    margin: 25% 10%;
+  }
+
+  .features {
+    margin: 0 24px;
+  }
+
+  .features .benefit-features {
+    font-size: 1.5em;
+  }
+
+  footer {
+    background-image: url("assets/mobile/image-footer.jpg"),
+      linear-gradient(#4d96a9, #4d96a9);
+    padding: 1em 4em;
+  }
+}
