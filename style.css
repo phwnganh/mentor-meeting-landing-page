@@ -134,6 +134,7 @@ button {
 
 .gallery-grid img {
   width: 100%;
+  border-radius: 4px;
 }
 
 .features {
@@ -260,3 +261,5 @@ footer .download .download-btn {
     flex-basis: 33.33%;
   }
 }
+
+
